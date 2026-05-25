@@ -1,0 +1,2514 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Yiwu · China Sourcing Map Research</title>
+<meta name="description" content="A city research brief on Yiwu as the world's small-commodities trading hub: the two-hour cluster radius, the six market generations, five wholesale districts, the 1688 search guide, the 2026 trade-show calendar, and the Chinese-language perspective English guides leave out.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  /* ==========  RESET  ========== */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+  body { min-height: 100vh; }
+  img { max-width: 100%; display: block; }
+
+  /* ==========  TOKENS  ========== */
+  :root {
+    /* Brand */
+    --wf-pink: #E6185F;
+    --wf-pink-dark: #B80F48;
+    --wf-pink-soft: #FEE6EF;
+    --wf-pink-softer: #FEF6F9;
+
+    /* Ink */
+    --ink: #0E1A4A;
+    --ink-body: #1F2544;
+    --ink-soft: #474E68;
+    --ink-softer: #6B7280;
+    --ink-muted: #9CA3AF;
+
+    /* Surface */
+    --paper: #FAFAF7;
+    --paper-warm: #F5F2E9;
+    --white: #FFFFFF;
+    --line: #E5E0D2;
+    --line-soft: #EEE9DC;
+
+    /* Fit badges */
+    --fit-strong-bg: #DCFCE7;
+    --fit-strong-fg: #15803D;
+    --fit-mod-bg: #FEF3C7;
+    --fit-mod-fg: #92400E;
+    --fit-weak-bg: #F3F4F6;
+    --fit-weak-fg: #6B7280;
+
+    /* Shadow */
+    --shadow-sm: 0 1px 2px rgba(14, 26, 74, 0.04);
+    --shadow-md: 0 2px 8px rgba(14, 26, 74, 0.06);
+  }
+
+  /* ==========  BASE  ========== */
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+    font-size: 17px;
+    line-height: 1.7;
+    color: var(--ink-body);
+    background: var(--paper);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: 'ss01', 'cv11';
+  }
+
+  /* ==========  READING PROGRESS  ========== */
+  .progress-bar {
+    position: fixed;
+    top: 0; left: 0;
+    height: 2px;
+    background: var(--wf-pink);
+    width: 0%;
+    z-index: 100;
+    transition: width 60ms linear;
+  }
+
+  /* ==========  HEADER  ========== */
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(250, 250, 247, 0.88);
+    backdrop-filter: saturate(180%) blur(12px);
+    -webkit-backdrop-filter: saturate(180%) blur(12px);
+    border-bottom: 1px solid var(--line-soft);
+  }
+  .header-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 14px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+  }
+  .brand-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: var(--ink);
+    flex-shrink: 0;
+  }
+  .brand-link img { height: 22px; width: auto; }
+  .brand-link .pipe {
+    width: 1px;
+    height: 16px;
+    background: var(--line);
+  }
+  .brand-link .article-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-softer);
+    font-weight: 500;
+  }
+  .site-nav {
+    display: flex;
+    gap: 26px;
+    font-size: 14px;
+  }
+  .site-nav a {
+    color: var(--ink-soft);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 150ms;
+    letter-spacing: 0.005em;
+  }
+  .site-nav a:hover { color: var(--wf-pink); }
+  .site-nav a.active { color: var(--wf-pink); }
+
+  @media (max-width: 1100px) {
+    .site-nav { display: none; }
+  }
+
+  /* ==========  HERO  ========== */
+  .hero {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 120px 32px 80px;
+  }
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--wf-pink);
+    margin-bottom: 28px;
+  }
+  .eyebrow::before {
+    content: '';
+    width: 28px;
+    height: 1.5px;
+    background: var(--wf-pink);
+  }
+  .hero h1 {
+    font-family: 'Fraunces', 'Instrument Serif', Georgia, serif;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 144;
+    font-size: clamp(2.6rem, 6.5vw, 5rem);
+    line-height: 1.02;
+    letter-spacing: -0.035em;
+    color: var(--ink);
+    max-width: 20ch;
+    margin-bottom: 28px;
+  }
+  .hero h1 em {
+    font-style: italic;
+    font-variation-settings: 'opsz' 144;
+    color: var(--wf-pink);
+  }
+  .hero .dek {
+    font-family: 'Fraunces', serif;
+    font-weight: 300;
+    font-size: clamp(1.15rem, 1.8vw, 1.5rem);
+    line-height: 1.45;
+    color: var(--ink-soft);
+    max-width: 62ch;
+    margin-bottom: 40px;
+    letter-spacing: -0.005em;
+  }
+  .byline {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 15px;
+    color: var(--ink-soft);
+    margin-bottom: 64px;
+    flex-wrap: wrap;
+  }
+  .byline .by { color: var(--ink-softer); }
+  .byline .author { font-weight: 600; color: var(--ink); }
+  .byline .date { color: var(--ink-softer); }
+  .byline .bar { width: 1px; height: 14px; background: var(--line); }
+
+  .brands-row {
+    padding: 28px 0;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    flex-wrap: wrap;
+  }
+  .brands-row .label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-softer);
+    font-weight: 600;
+  }
+  .brands-icons {
+    display: flex;
+    gap: 22px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .brands-icons .brand-chip {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--ink);
+  }
+  .brands-icons .brand-chip .cn {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--wf-pink);
+    font-weight: 600;
+  }
+
+  /* ==========  LAYOUT  ========== */
+  .article {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 32px 96px;
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 80px;
+  }
+  @media (max-width: 1024px) {
+    .article { grid-template-columns: 1fr; gap: 0; }
+  }
+
+  /* ==========  TOC SIDEBAR  ========== */
+  .toc-aside {
+    position: sticky;
+    top: 88px;
+    align-self: start;
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+    padding-right: 16px;
+    font-size: 14px;
+  }
+  .toc-aside::-webkit-scrollbar { width: 4px; }
+  .toc-aside::-webkit-scrollbar-thumb { background: var(--line); border-radius: 2px; }
+  .toc-heading {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-softer);
+    font-weight: 600;
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--line);
+  }
+  .toc-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+  .toc-list a {
+    display: block;
+    padding: 6px 0 6px 12px;
+    color: var(--ink-soft);
+    text-decoration: none;
+    border-left: 2px solid transparent;
+    transition: all 150ms;
+    line-height: 1.4;
+  }
+  .toc-list a:hover {
+    color: var(--ink);
+    border-left-color: var(--line);
+  }
+  .toc-list a.active {
+    color: var(--wf-pink);
+    border-left-color: var(--wf-pink);
+    font-weight: 500;
+  }
+  .toc-list .num {
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--wf-pink);
+    font-weight: 600;
+    margin-right: 8px;
+    font-size: 12px;
+  }
+
+  @media (max-width: 1024px) {
+    .toc-aside { display: none; }
+  }
+
+  /* ==========  MAIN CONTENT  ========== */
+  .main-content {
+    min-width: 0;
+    max-width: 720px;
+  }
+
+  /* ==========  SECTIONS  ========== */
+  section {
+    padding: 80px 0 40px;
+    scroll-margin-top: 80px;
+  }
+  section:first-of-type { padding-top: 40px; }
+
+  .section-anchor {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+  .section-num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    color: var(--wf-pink);
+  }
+  .section-divider {
+    flex: 1;
+    height: 1px;
+    background: var(--line);
+  }
+
+  h2 {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 144;
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.08;
+    letter-spacing: -0.03em;
+    color: var(--ink);
+    margin: 24px 0 24px;
+    max-width: 20ch;
+  }
+  h2 em {
+    font-style: italic;
+    color: var(--wf-pink);
+  }
+
+  h3 {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-variation-settings: 'opsz' 72;
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    margin: 64px 0 12px;
+  }
+  h3 em { font-style: italic; color: var(--wf-pink); }
+  h3 .cn {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 0.62em;
+    color: var(--ink-softer);
+    letter-spacing: 0;
+  }
+
+  h4 {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-softer);
+    margin: 32px 0 8px;
+  }
+
+  h5 {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--ink);
+    margin: 20px 0 8px;
+  }
+
+  p {
+    margin-bottom: 20px;
+    max-width: 68ch;
+  }
+  .intro-p {
+    font-size: 19px;
+    font-weight: 400;
+    color: var(--ink);
+    line-height: 1.6;
+    max-width: 64ch;
+    margin-bottom: 24px;
+  }
+  .fine {
+    font-size: 15px;
+    color: var(--ink-soft);
+  }
+
+  strong { font-weight: 600; color: var(--ink); }
+  em { font-style: italic; }
+  .pink { color: var(--wf-pink); }
+  .pink-bold { color: var(--wf-pink); font-weight: 600; }
+  .cn-term {
+    font-family: 'Inter', sans-serif;
+    color: var(--wf-pink-dark);
+    font-weight: 600;
+  }
+
+  sup.ref {
+    color: var(--wf-pink);
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 600;
+    font-size: 0.7em;
+    margin-left: 1px;
+  }
+
+  /* ==========  STATS ROW  ========== */
+  .stats-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 24px;
+    padding: 24px 0;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    margin: 24px 0;
+  }
+  .stat .stat-num {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-variation-settings: 'opsz' 72;
+    font-size: 36px;
+    color: var(--wf-pink);
+    line-height: 1;
+    letter-spacing: -0.02em;
+    font-variant-numeric: tabular-nums;
+    margin-bottom: 8px;
+  }
+  .stat .stat-num .unit {
+    font-style: italic;
+    font-size: 0.62em;
+    color: var(--wf-pink-dark);
+  }
+  .stat .stat-lbl {
+    font-size: 13px;
+    color: var(--ink-soft);
+    line-height: 1.4;
+  }
+
+  /* ==========  PULL QUOTE  ========== */
+  .pull {
+    font-family: 'Fraunces', serif;
+    font-weight: 300;
+    font-style: italic;
+    font-variation-settings: 'opsz' 144;
+    font-size: 22px;
+    line-height: 1.4;
+    color: var(--ink);
+    max-width: 52ch;
+    padding: 24px 0 24px 28px;
+    margin: 32px 0;
+    border-left: 3px solid var(--wf-pink);
+    letter-spacing: -0.005em;
+  }
+  .pull cite {
+    display: block;
+    margin-top: 16px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-size: 13px;
+    color: var(--ink-softer);
+    font-weight: 500;
+    letter-spacing: 0.02em;
+  }
+
+  /* ==========  KEY POINT CALLOUT  ========== */
+  .callout {
+    background: var(--wf-pink-softer);
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin: 32px 0;
+    border-left: 3px solid var(--wf-pink);
+  }
+  .callout .callout-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--wf-pink);
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: block;
+  }
+  .callout p { margin-bottom: 0; font-size: 16px; }
+  .callout p:not(:last-child) { margin-bottom: 12px; }
+
+  /* ==========  NEUTRAL / WARM CALLOUT  ========== */
+  .not-borrowable {
+    background: var(--paper-warm);
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin: 24px 0;
+  }
+  .not-borrowable .callout-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-softer);
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: block;
+  }
+  .not-borrowable p { margin-bottom: 0; font-size: 16px; }
+
+  /* ==========  WARNING CALLOUT  ========== */
+  .warn {
+    background: linear-gradient(135deg, #FFF4EC 0%, var(--wf-pink-softer) 100%);
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin: 28px 0;
+    border-left: 3px solid #C75016;
+  }
+  .warn .callout-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #C75016;
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .warn .callout-label::before {
+    content: '';
+    width: 8px; height: 8px;
+    background: #C75016;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .warn p { margin-bottom: 0; font-size: 16px; color: var(--ink); }
+
+  /* ==========  EVIDENCE CARD  ========== */
+  .evidence {
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 24px;
+    margin: 32px 0;
+    box-shadow: var(--shadow-sm);
+  }
+  .evidence-head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 14px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid var(--line-soft);
+  }
+  .evidence-head .label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--wf-pink);
+    font-weight: 600;
+  }
+  .evidence-head .ev-mark {
+    width: 22px; height: 22px;
+    border-radius: 5px;
+    background: var(--wf-pink-softer);
+    color: var(--wf-pink);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .evidence-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+  }
+  .evidence-list li {
+    font-size: 15px;
+    line-height: 1.45;
+    color: var(--ink);
+  }
+  .evidence-list li .src {
+    font-weight: 600;
+    color: var(--ink);
+  }
+  .evidence-list li .note {
+    display: block;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--ink-softer);
+    margin-top: 3px;
+    line-height: 1.4;
+  }
+
+  /* ==========  COMPOSITION CHART  ========== */
+  .comp-figure {
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 28px 32px;
+    margin: 32px 0;
+    box-shadow: var(--shadow-sm);
+  }
+  .comp-figure-head {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--line-soft);
+  }
+  .comp-figure-head .ft { font-family: 'Fraunces', serif; font-size: 20px; font-weight: 500; color: var(--ink); }
+  .comp-figure-head .fl { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-softer); font-weight: 600; margin-left: auto; }
+  .comp-rows {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .comp-row {
+    display: grid;
+    grid-template-columns: 230px 1fr 64px;
+    align-items: center;
+    gap: 14px;
+    font-size: 14px;
+  }
+  @media (max-width: 680px) {
+    .comp-row { grid-template-columns: 130px 1fr 54px; font-size: 13px; }
+  }
+  .comp-label { color: var(--ink); }
+  .comp-label .rank {
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--wf-pink);
+    font-weight: 600;
+    font-size: 12px;
+    margin-right: 6px;
+  }
+  .comp-bar {
+    background: var(--paper-warm);
+    height: 14px;
+    border-radius: 2px;
+    overflow: hidden;
+  }
+  .comp-bar-fill {
+    height: 100%;
+    background: var(--wf-pink);
+    border-radius: 2px;
+    transition: width 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .comp-bar-fill.s2 { background: #E6478A; }
+  .comp-bar-fill.s3 { background: #EE7FAC; }
+  .comp-bar-fill.s4 { background: #F0A8C5; }
+  .comp-bar-fill.muted { background: #C8CFE5; }
+  .comp-val {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 600;
+    color: var(--ink);
+    text-align: right;
+    font-size: 12px;
+    font-variant-numeric: tabular-nums;
+  }
+  .comp-commentary {
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line-soft);
+    font-size: 15px;
+    color: var(--ink-soft);
+    line-height: 1.55;
+    max-width: 68ch;
+  }
+  .comp-commentary strong { color: var(--ink); }
+
+  /* ==========  DATA TABLES  ========== */
+  .table-wrap {
+    margin: 32px 0;
+    overflow-x: auto;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+  }
+  table.compare {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    background: var(--white);
+    min-width: 620px;
+  }
+  table.compare th {
+    text-align: left;
+    padding: 12px 16px;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 600;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-softer);
+    background: var(--paper-warm);
+    border-bottom: 2px solid var(--line);
+  }
+  table.compare td {
+    padding: 12px 16px;
+    border-top: 1px solid var(--line-soft);
+    color: var(--ink);
+    line-height: 1.45;
+    vertical-align: top;
+  }
+  table.compare td.brand {
+    font-weight: 600;
+  }
+  table.compare td.cn {
+    font-weight: 600;
+    color: var(--ink);
+    white-space: nowrap;
+  }
+  table.compare td.num {
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--wf-pink);
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  table.compare td .meta-line {
+    display: block;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11.5px;
+    color: var(--ink-softer);
+    margin-top: 3px;
+  }
+
+  /* ==========  TWO-COL BLOCK  ========== */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin: 32px 0;
+    padding: 24px;
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+  }
+  @media (max-width: 680px) {
+    .two-col { grid-template-columns: 1fr; padding: 20px; gap: 24px; }
+  }
+  .two-col h5 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--ink);
+  }
+  .two-col h5 .dot {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: var(--wf-pink);
+  }
+  .two-col h5.alt .dot { background: var(--ink); }
+  .two-col p { font-size: 15px; line-height: 1.55; margin-bottom: 8px; }
+  .two-col .ex {
+    font-size: 13px;
+    color: var(--ink-softer);
+    font-style: italic;
+    line-height: 1.5;
+  }
+  .two-col dl {
+    display: grid;
+    grid-template-columns: 86px 1fr;
+    gap: 7px 12px;
+    margin: 8px 0 0;
+  }
+  .two-col dt {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-softer);
+    font-weight: 600;
+    padding-top: 3px;
+  }
+  .two-col dd {
+    color: var(--ink);
+    font-size: 13.5px;
+    line-height: 1.45;
+  }
+
+  /* ==========  STACKED COMPARE BLOCKS  ========== */
+  .proscons-stacked {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin: 24px 0;
+  }
+  .pc-block {
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 20px 24px;
+  }
+  .pc-block.pros { border-left: 3px solid #15803D; }
+  .pc-block.cons { border-left: 3px solid var(--wf-pink); }
+  .pc-block h4 {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--ink);
+    margin: 0 0 14px;
+    text-transform: none;
+    letter-spacing: -0.01em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .pc-block h4 .dot {
+    width: 10px; height: 10px; border-radius: 50%; display: inline-block;
+  }
+  .pc-block.pros h4 .dot { background: #15803D; }
+  .pc-block.cons h4 .dot { background: var(--wf-pink); }
+  .pc-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  @media (max-width: 680px) { .pc-items { grid-template-columns: 1fr; } }
+  .pc-item {
+    position: relative;
+    padding: 14px 14px 14px 40px;
+    background: var(--paper-warm);
+    border-radius: 6px;
+  }
+  .pc-item-num {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--ink-softer);
+    letter-spacing: 0.02em;
+    line-height: 1;
+  }
+  .pc-block.pros .pc-item-num { color: #15803D; }
+  .pc-block.cons .pc-item-num { color: var(--wf-pink-dark); }
+  .pc-item-head {
+    display: block;
+    font-size: 13.5px;
+    color: var(--ink);
+    margin-bottom: 5px;
+    font-weight: 600;
+    letter-spacing: -0.005em;
+  }
+  .pc-item p {
+    font-size: 12.5px;
+    line-height: 1.5;
+    color: var(--ink-soft);
+    margin: 0;
+  }
+  .pc-item p strong { color: var(--ink); }
+
+  /* ==========  LISTS  ========== */
+  .clean-list {
+    list-style: none;
+    margin: 20px 0;
+  }
+  .clean-list li {
+    padding: 10px 0 10px 24px;
+    position: relative;
+    line-height: 1.55;
+    max-width: 68ch;
+  }
+  .clean-list li::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 20px;
+    width: 12px;
+    height: 1.5px;
+    background: var(--wf-pink);
+  }
+  .clean-list li strong { color: var(--ink); }
+
+  /* Numbered call list */
+  ol.call-list {
+    list-style: none;
+    counter-reset: call;
+    margin: 20px 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  ol.call-list li {
+    counter-increment: call;
+    position: relative;
+    padding-left: 48px;
+    line-height: 1.6;
+    max-width: 72ch;
+    min-height: 36px;
+  }
+  ol.call-list li::before {
+    content: counter(call);
+    position: absolute;
+    left: 0; top: 0;
+    width: 32px; height: 32px;
+    border-radius: 50%;
+    background: var(--wf-pink);
+    color: white;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 600;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  ol.call-list li strong { color: var(--ink); }
+
+  /* ==========  TERM GRID (search terms)  ========== */
+  .term-block {
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 22px 24px;
+    margin: 24px 0;
+    box-shadow: var(--shadow-sm);
+  }
+  .term-block .tb-head {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--wf-pink);
+    font-weight: 600;
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--line-soft);
+  }
+  .term-cats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px 24px;
+  }
+  .term-cat .tc-label {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 8px;
+  }
+  .term-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .term-chip {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 4px;
+    background: var(--paper-warm);
+    color: var(--ink);
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.3;
+  }
+  .term-chip.modifier {
+    background: var(--wf-pink-softer);
+    color: var(--wf-pink-dark);
+  }
+  .term-chip .py {
+    color: var(--ink-softer);
+    font-size: 11px;
+    font-family: 'JetBrains Mono', monospace;
+    margin-left: 4px;
+  }
+
+  /* ==========  TIMELINE / WINDOW STRIP  ========== */
+  .windows {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 24px 0;
+  }
+  .window-row {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 16px;
+    align-items: baseline;
+    padding: 14px 18px;
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    border-left: 3px solid var(--wf-pink);
+  }
+  @media (max-width: 560px) { .window-row { grid-template-columns: 1fr; gap: 4px; } }
+  .window-row.avoid { border-left-color: #C75016; }
+  .window-row .wr-period {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--wf-pink);
+    letter-spacing: 0.02em;
+  }
+  .window-row.avoid .wr-period { color: #C75016; }
+  .window-row .wr-desc {
+    font-size: 14px;
+    color: var(--ink);
+    line-height: 1.5;
+  }
+
+  /* ==========  TIMELINE STRIP (origin story)  ========== */
+  .timeline {
+    margin: 28px 0;
+    border-left: 2px solid var(--line);
+    padding-left: 0;
+  }
+  .tl-row {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    gap: 18px;
+    padding: 12px 0 12px 24px;
+    position: relative;
+  }
+  .tl-row::before {
+    content: '';
+    position: absolute;
+    left: -7px; top: 19px;
+    width: 12px; height: 12px;
+    border-radius: 50%;
+    background: var(--wf-pink);
+    border: 2px solid var(--paper);
+  }
+  @media (max-width: 560px) { .tl-row { grid-template-columns: 1fr; gap: 2px; } }
+  .tl-row .tl-year {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--wf-pink);
+    letter-spacing: 0.02em;
+    padding-top: 1px;
+  }
+  .tl-row .tl-desc {
+    font-size: 15px;
+    color: var(--ink);
+    line-height: 1.5;
+  }
+  .tl-row .tl-desc strong { color: var(--ink); }
+
+  /* ==========  FOOTER  ========== */
+  .site-footer {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 48px 32px;
+    border-top: 1px solid var(--line);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+    font-size: 14px;
+    color: var(--ink-softer);
+  }
+  .site-footer img { height: 20px; }
+  .site-footer .left { display: flex; align-items: center; gap: 14px; }
+  .site-footer .right { display: flex; align-items: center; gap: 14px; }
+  .site-footer a { color: var(--ink-softer); text-decoration: none; }
+  .site-footer a:hover { color: var(--wf-pink); }
+
+  /* ==========  PRINT  ========== */
+  @media print {
+    .site-header, .toc-aside, .site-footer, .progress-bar { display: none !important; }
+    body { font-size: 12pt; }
+    .article { grid-template-columns: 1fr; }
+    section { break-inside: avoid; }
+    a { color: black; }
+  }
+</style>
+</head>
+<body>
+
+<div class="progress-bar" id="progress-bar"></div>
+
+<!-- ==========  HEADER  ========== -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="#top" class="brand-link">
+      <img src="images/wf_logo.webp" alt="Ant International · WorldFirst">
+      <span class="pipe"></span>
+      <span class="article-tag">China Sourcing Map · Research</span>
+    </a>
+    <nav class="site-nav">
+      <a href="#origin">Origin</a>
+      <a href="#districts">Clusters</a>
+      <a href="#markets">Markets</a>
+      <a href="#suppliers">Suppliers</a>
+      <a href="#platform">1688</a>
+      <a href="#culture">Culture</a>
+      <a href="#stories">Stories</a>
+      <a href="#verification">Methodology</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ==========  HERO  ========== -->
+<div id="top"></div>
+<section class="hero">
+  <span class="eyebrow">City Research Brief · Episode 3</span>
+  <h1>Sourcing <em>Yiwu</em>: the small-commodities research brief.</h1>
+  <p class="dek">A ground-up study of the world's largest small-commodities market and the two-hour cluster radius that makes it a structural moat. The factory towns, six market generations, five trade-city districts, the new Gen 6 Digital Trade Centre, the 1688 search guide, the 2026 calendar, and the Chinese-language perspective that English guides leave out.</p>
+  <div class="byline">
+    <span class="by">By</span>
+    <span class="author">Steven Chen</span>
+    <span class="bar"></span>
+    <span class="date">Research conducted May 2026</span>
+    <span class="bar"></span>
+    <span class="date">~28 min read</span>
+  </div>
+
+  <div class="brands-row">
+    <span class="label">Three-stream research</span>
+    <div class="brands-icons">
+      <span class="brand-chip">Web foundation</span>
+      <span class="brand-chip">Human voice forums</span>
+      <span class="brand-chip">Chinese platforms <span class="cn">哔哩哔哩 · 小红书</span></span>
+    </div>
+  </div>
+</section>
+
+<!-- ==========  ARTICLE LAYOUT  ========== -->
+<div class="article">
+
+  <!-- TOC -->
+  <aside class="toc-aside" id="toc">
+    <div class="toc-heading">Contents</div>
+    <ul class="toc-list">
+      <li><a href="#scope"><span class="num">00</span>Scope &amp; method</a></li>
+      <li><a href="#origin"><span class="num">§ 1</span>The origin story</a></li>
+      <li><a href="#districts"><span class="num">§ 2</span>The two-hour cluster ring</a></li>
+      <li><a href="#markets"><span class="num">§ 3</span>The wholesale markets</a></li>
+      <li><a href="#suppliers"><span class="num">§ 4</span>The supplier landscape</a></li>
+      <li><a href="#platform"><span class="num">§ 5</span>The 1688 search guide</a></li>
+      <li><a href="#tradeshow"><span class="num">§ 6</span>The trade-show hook</a></li>
+      <li><a href="#culture"><span class="num">§ 7</span>The cultural insider tip</a></li>
+      <li><a href="#logistics"><span class="num">§ 8</span>Travel &amp; logistics</a></li>
+      <li><a href="#stories"><span class="num">§ 9</span>Importer stories &amp; angles</a></li>
+      <li><a href="#bilibili"><span class="num">§ 10</span>The Chinese perspective</a></li>
+      <li><a href="#opportunities"><span class="num">··</span>Content opportunities</a></li>
+      <li><a href="#faq"><span class="num">··</span>FAQ seeds</a></li>
+      <li><a href="#verification"><span class="num">··</span>Research methodology</a></li>
+    </ul>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main-content">
+
+    <!-- ==========  SCOPE  ========== -->
+    <section id="scope">
+      <div class="section-anchor">
+        <span class="section-num">00</span>
+        <span class="section-divider"></span>
+      </div>
+      <h2>Scope &amp; method.</h2>
+      <p class="intro-p">This brief is the research foundation for the Yiwu episode of the China Sourcing Map video series. It maps why this small Zhejiang county sells the world its everyday objects, where the factory clusters sit, and how an importer actually navigates a market complex that takes a CNN photographer four days to walk without finishing.</p>
+
+      <div class="two-col">
+        <div>
+          <h5><span class="dot"></span>What this is</h5>
+          <p>A structured city research brief. Ten thematic chapters covering history, the cluster geography, markets, suppliers, the 1688 platform, trade shows, business culture, logistics, real importer experience, and the Chinese-language view.</p>
+        </div>
+        <div>
+          <h5 class="alt"><span class="dot"></span>What this isn't</h5>
+          <p>A finished script or a sourcing guarantee. It is the evidence layer that scripting, scene planning, and fact-checking sit on top of. Seven figures are flagged for human verification at the end.</p>
+        </div>
+      </div>
+
+      <p>Research ran across three parallel streams: an English-language foundation pass against v2 site verified data, a human-voice pass covering forums and importer accounts, and a Chinese-language pass across Bilibili, Xiaohongshu, and domestic media. Over fifty queries against more than a hundred sources, conducted in May 2026. Where the brief cites a source by name, that name is shown in the evidence card; where no source exists for a claim, it is rendered as a plain statement, not dressed up as a citation.</p>
+
+      <div class="callout">
+        <span class="callout-label">A note on this episode versus the last two</span>
+        <p>This is episode three, after Guangzhou (the factory hall, textiles and leather and a diverse mix) and Shenzhen (electronics and innovation). Yiwu sits about seven hours by train from either and covers ground neither does: small commodities, Christmas, jewelry, toys, hosiery. Where Guangzhou is the trade hall and Shenzhen the lab, Yiwu is the world's distribution warehouse. This brief deliberately does not re-explain 1688 basics, payment-fraud fundamentals, or general negotiation theory already covered in the earlier episodes.</p>
+      </div>
+    </section>
+
+    <!-- ==========  SECTION 1 · ORIGIN  ========== -->
+    <section id="origin">
+      <div class="section-anchor">
+        <span class="section-num">§ 1</span>
+        <span class="section-divider"></span>
+      </div>
+      <h2>The origin story.</h2>
+      <p class="intro-p">Yiwu's grip on the world's small-commodities trade is not an accident of geography. The land is hilly and the soil is poor, which is why farming failed and trade survived. A 1982 county-party-secretary decision then turned 400 years of peddling instinct into the first legal free market in PRC history.</p>
+
+      <h3>Before 1949: chicken feathers for sugar <span class="cn">鸡毛换糖</span></h3>
+      <p>From the 17th century onward, Yiwu peddlers shook a 拨浪鼓 (rattle drum) and walked the countryside with two yoked baskets, one of brown sugar from local cane fields, one empty. They swapped sugar for chicken feathers. Good rooster feathers became feather dusters, the rest became fertiliser. Over time the sugar basket diversified into buttons, needles, thread, and headwear, the proto small-commodities trade. The instinct survived even when private trade was banned as capitalist activity after 1949.</p>
+
+      <h3>April 1982: the Feng Aiqian moment</h3>
+      <p>Xie Gaohua was appointed Yiwu Party Secretary in April 1982. A month in, a street vendor named Feng Aiqian confronted him after county authorities had repeatedly confiscated her goods. Her line was simple. "I just want to sell things." Xie travelled to Wenzhou, the first Chinese city to allow private enterprise, to research, then made his decision.</p>
+
+      <div class="pull">
+        "Respect the public's initiative. I am responsible for any problems."
+        <cite>Xie Gaohua, Yiwu Party Secretary, 1982</cite>
+      </div>
+
+      <h3>November 1982: the Four Permissions <span class="cn">四个允许</span></h3>
+      <p>Xie announced Huqingmen Market in September 1982. It opened on 26 November 1982 with a few hundred sheds and stalls over a drainage ditch near Huqingmen Street. The Four Permissions allowed farmers to enter the city, conduct business, engage in long-distance trading, and compete with state enterprises. This was the first time in PRC history that a local government legalised a free market for farmers.</p>
+
+      <h3>1984: "prosper the county through commerce" <span class="cn">兴商建县</span></h3>
+      <p>In October 1984, Xie proclaimed Yiwu's pillar-industry strategy. By 1991, booth count exceeded 10,000. The compounding had started.</p>
+
+      <h3>Six market generations, 1982 to 2025</h3>
+      <p>Every market generation has been physically larger and architecturally more ambitious than the last. The arc reads as a single working lifetime of physical expansion. The most recent generation, the Global Digital Trade Centre, opened in October 2025.</p>
+
+      <div class="timeline">
+        <div class="tl-row">
+          <span class="tl-year">Gen 1 · 1982</span>
+          <span class="tl-desc">Outdoor sheds and stalls at Huqingmen, on a drainage-ditch site near Huqingmen Street. Hundreds of booths.</span>
+        </div>
+        <div class="tl-row">
+          <span class="tl-year">Gen 2 · 1984</span>
+          <span class="tl-desc">A proper booth market on a 580,000 yuan government investment, the first real building.</span>
+        </div>
+        <div class="tl-row">
+          <span class="tl-year">Gen 3 · 1986</span>
+          <span class="tl-desc">The first indoor market.</span>
+        </div>
+        <div class="tl-row">
+          <span class="tl-year">Gen 4 · 1992</span>
+          <span class="tl-desc">Huangyuan Store Market. Same year Beijing officially named Yiwu "China Small Commodities City."</span>
+        </div>
+        <div class="tl-row">
+          <span class="tl-year">Gen 5 · 2002</span>
+          <span class="tl-desc">International Trade City (Futian), Districts 1 through 5, eventually 75,000 booths. The current physical centre.</span>
+        </div>
+        <div class="tl-row">
+          <span class="tl-year">Gen 6 · 2025</span>
+          <span class="tl-desc"><strong>Global Digital Trade Centre,</strong> 1.25 million sqm, 8.3 billion yuan investment, opened 14 October 2025. Physical plus AI-powered digital trade.</span>
+        </div>
+      </div>
+
+      <div class="callout">
+        <span class="callout-label">What's new in 2026</span>
+        <p>The Gen 6 Global Digital Trade Centre is the single biggest "what changed in Yiwu" story for any video shot this year. 310,000 sqm of trading space across seven office towers, plus 1,001 apartment units, plus a commercial street, plus a "data trade port." Stall sizes are double the old districts, around 30 sqm each, built so merchants can demo bigger objects: drones, exoskeletons, humanoid robots, smart equipment. Of the 3,700-plus merchants who moved in, 52% are 商二代 ("second-generation," the sons and daughters of the original 1990s 老板娘), and 57% operate proprietary brands or IP products rather than generic wholesale.</p>
+      </div>
+
+      <h3>The Yiwu Index, the Dow Jones of small commodities <span class="cn">since 2006</span></h3>
+      <p>Released by China's Ministry of Commerce in October 2006. The index tracks 15 categories, 97 mid-categories, 525 sub-categories, and 1,964 detailed categories across more than 3,000 representative products, collected from nearly 3,000 fixed-point stations. It was upgraded to Index 2.0 in 2024, adding online, offline, and export price dimensions plus prosperity and activity indicators. It moves when international political, economic, or sports events shift global demand.</p>
+
+      <h3>Yixin'ou, the Yiwu-to-Madrid freight train <span class="cn">义新欧</span></h3>
+      <p>Launched 18 November 2014. At 13,052 km, it is the world's longest rail freight route. Transit time is 21 days, against around 45 by sea. Annual departures grew from 23 in 2014 to more than 1,100 in 2024. Cumulative figures through end-2024: more than 11,380 trains, 932,200 standard containers, $8 billion-plus cargo value. The 2025 target is 2,000 trains a year. In April 2025, the first major overseas hub opened, a distribution centre in Tashkent. The route now serves 13 active corridor categories covering Europe, Central Asia, and Russia. For European buyers, this is the rail alternative to the Red Sea and Suez sea routes that have run unreliably through 2024 and 2025.</p>
+
+      <h3>2025 trade volume, a record year</h3>
+      <p>The headline numbers from January to October 2025 are unusual not just in magnitude but in mix: aggregate at a record high while individual merchants report patchy demand, and a clear pivot away from the United States toward Africa, ASEAN, and Latin America.</p>
+
+      <div class="stats-row">
+        <div class="stat">
+          <div class="stat-num">701<span class="unit">bn 元</span></div>
+          <div class="stat-lbl">Jan to Oct 2025 trade, up 25.2% YoY (already past full-year 2024)</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">124<span class="unit">bn 元</span></div>
+          <div class="stat-lbl">Africa exports Jan to Oct, +21.8%, now Yiwu's #1 regional market</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">+51<span class="unit">%</span></div>
+          <div class="stat-lbl">ASEAN exports growth, the fastest segment</div>
+        </div>
+      </div>
+
+      <div class="stats-row">
+        <div class="stat">
+          <div class="stat-num">220<span class="unit">k</span></div>
+          <div class="stat-lbl">Daily visitors, a 10-year high</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">2.33<span class="unit">m</span></div>
+          <div class="stat-lbl">Peak daily foot traffic during National Day 2024</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">+55<span class="unit">%</span></div>
+          <div class="stat-lbl">EU Christmas exports growth Jan to Oct 2025</div>
+        </div>
+      </div>
+
+      <aside class="evidence">
+        <div class="evidence-head">
+          <span class="ev-mark">§1</span>
+          <span class="label">Evidence &amp; sources</span>
+        </div>
+        <ul class="evidence-list">
+          <li>
+            <span class="src">Yiwu Municipal Government records, China Daily, Global Times</span>
+            <span class="note">Xie Gaohua appointment, Feng Aiqian incident, Four Permissions decree, 兴商建县 strategy.</span>
+          </li>
+          <li>
+            <span class="src">Ministry of Commerce, Yiwu Index 2.0 release notes</span>
+            <span class="note">Index category counts, collection-station numbers, and the 2024 2.0 upgrade scope.</span>
+          </li>
+          <li>
+            <span class="src">Yixin'ou operator data, China Railway</span>
+            <span class="note">Route distance, 21-day transit, annual departure growth 2014 to 2024, Tashkent hub opening.</span>
+          </li>
+          <li>
+            <span class="src">Yiwu Customs Jan-Oct 2025 release</span>
+            <span class="note">RMB trade and export totals, regional mix, daily foot-traffic figures.</span>
+          </li>
+          <li>
+            <span class="src">Gen 6 Global Digital Trade Centre opening coverage</span>
+            <span class="note">14 October 2025 opening date, 1.25m sqm footprint, 8.3bn yuan investment, merchant demographics.</span>
+          </li>
+        </ul>
+      </aside>
+    </section>
+
+    <!-- ==========  SECTION 2 · CLUSTERS  ========== -->
+    <section id="districts">
+      <div class="section-anchor">
+        <span class="section-num">§ 2</span>
+        <span class="section-divider"></span>
+      </div>
+      <h2>The two-hour cluster ring.</h2>
+      <p class="intro-p">Yiwu is not a manufacturing city. It is a trading city sitting at the geographic crossroads of central Zhejiang's specialist towns. A two-or-three-day sourcing trip can realistically cover the Futian market complex plus two cluster towns. This two-hour radius is Yiwu's structural moat: no other Chinese commodity market sits inside this many specialist clusters.</p>
+
+      <h3>The four cluster towns inside the ring</h3>
+      <p>Each town below is a single-category capital with its own factory base, its own labour pool, and its own price discipline. The drive times are from Yiwu city.</p>
+
+      <div class="table-wrap">
+        <table class="compare">
+          <thead>
+            <tr>
+              <th>Town</th>
+              <th>Specialism</th>
+              <th>Scale</th>
+              <th>From Yiwu</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="cn">Datang, Zhuji<span class="meta-line">大唐镇, 诸暨</span></td>
+              <td>Socks and hosiery. "大唐产、义乌卖" (Datang produces, Yiwu sells).</td>
+              <td>25 to 27 billion pairs a year. 70% of China, ~1/3 of global production. Supplies Nike, Adidas, Puma.</td>
+              <td>~90 min northwest</td>
+            </tr>
+            <tr>
+              <td class="cn">Pujiang<span class="meta-line">浦江县</span></td>
+              <td>Crystal handicrafts.</td>
+              <td>60% China share, ~80% of national production. 1,000+ factories, 50,000+ workers.</td>
+              <td>20-30 km north</td>
+            </tr>
+            <tr>
+              <td class="cn">Yongkang<span class="meta-line">永康市</span></td>
+              <td>Hardware and metal goods.</td>
+              <td>60% of China's hardware exports. 90% of city industrial output sits in the cluster.</td>
+              <td>~1.5 hr west</td>
+            </tr>
+            <tr>
+              <td class="cn">Dongyang<span class="meta-line">东阳市</span></td>
+              <td>Wood carving.</td>
+              <td>1,300-plus years of heritage. 2,700 product varieties. Exports to 30+ countries.</td>
+              <td>6 min by car (25 min taxi south)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Beyond the ring</h3>
+      <p>Three further specialist clusters sit just outside the two-hour radius. They are not day-trippable from Yiwu but show up constantly in supplier conversations.</p>
+
+      <ul class="clean-list">
+        <li><strong>Zhuji,</strong> on top of socks, also produces more than 80% of China's freshwater pearls.</li>
+        <li><strong>Shaoxing</strong> is textiles.</li>
+        <li><strong>Ningbo</strong> is electrical machinery and the regional port.</li>
+        <li><strong>Taizhou</strong> is plastics and rubber.</li>
+      </ul>
+
+      <div class="callout">
+        <span class="callout-label">Reading the cluster map</span>
+        <p>The structural moat is not the Yiwu market. It is the fact that the world's largest commodity market sits inside a ring of single-category factory towns, all within a half-day drive. A sock buyer can clear Futian District 4 and the Datang factories in two days. A jewelry buyer can do Futian District 1 and a Pujiang crystal workshop in two days. The single biggest planning mistake is treating Yiwu as one destination instead of routing the trip across the ring.</p>
+      </div>
+
+      <aside class="evidence">
+        <div class="evidence-head">
+          <span class="ev-mark">§2</span>
+          <span class="label">Evidence &amp; sources</span>
+        </div>
+        <ul class="evidence-list">
+          <li>
+            <span class="src">Cluster-town industrial bureaus, Zhejiang provincial records</span>
+            <span class="note">Cluster shares, factory counts, output figures, and the "大唐产、义乌卖" framing for the socks economy.</span>
+          </li>
+          <li>
+            <span class="src">Datang Sock Industry Association</span>
+            <span class="note">Volume 25 to 27 billion pairs a year, plus the brand client list.</span>
+          </li>
+        </ul>
+      </aside>
+    </section>
+
+    <!-- ==========  SECTION 3 · MARKETS  ========== -->
+    <section id="markets">
+      <div class="section-anchor">
+        <span class="section-num">§ 3</span>
+        <span class="section-divider"></span>
+      </div>
+      <h2>The wholesale markets.</h2>
+      <p class="intro-p">Yiwu International Trade City <span class="cn-term">(义乌国际商贸城)</span> is the physical centre. Five districts plus the new Global Digital Trade Centre span 6.4 million square metres of trading space. 200,000 business operators serve 220,000 daily visitors, of whom roughly 3,900 are foreign buyers.</p>
+
+      <h3>The ten verified markets</h3>
+      <p>Each row carries a confidence rating of <strong>verified</strong> in the source brief, meaning the Chinese name and address were cross-checked. The "best for" column is the practical sourcing read.</p>
+
+      <div class="table-wrap">
+        <table class="compare">
+          <thead>
+            <tr>
+              <th>Market</th>
+              <th>Scale &amp; floors</th>
+              <th>Best for</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="cn">International Trade City, District 1<span class="meta-line">国际商贸城一区 · 稠州北路555号一区</span></td>
+              <td>10,000+ booths. F1: plush, plastic, electric toys (450k+ styles). F2: hair ornaments, fashion jewelry. F3: festival and holiday decor.</td>
+              <td>Toys, fashion jewelry, holiday crafts</td>
+            </tr>
+            <tr>
+              <td class="cn">International Trade City, District 2<span class="meta-line">国际商贸城二区 · 稠州北路555号二区</span></td>
+              <td>8,000+ booths. F1: bags, suitcases, umbrellas, gift packaging. F2: hardware tools, locks, vehicles. F3: kitchen and bath hardware, appliances, watches.</td>
+              <td>Bags, hardware tools, small electronics</td>
+            </tr>
+            <tr>
+              <td class="cn">International Trade City, District 3<span class="meta-line">国际商贸城三区 · 稠州北路555号三区</span></td>
+              <td>7,000+ booths. F1: pens, ink, paper, eyeglasses. F2: office and school supplies, sports goods. F3: cosmetics, beauty, zippers, buttons.</td>
+              <td>Stationery, cosmetics, office supplies</td>
+            </tr>
+            <tr>
+              <td class="cn">International Trade City, District 4<span class="meta-line">国际商贸城四区 · 稠州北路555号四区</span></td>
+              <td>16,000+ booths, the largest single district. F1: socks and hosiery, the world's most important sock floor, supplied directly from Datang. F2: daily goods, gloves, hats. F3: shoes, towels, neckties.</td>
+              <td>Socks, hosiery, daily necessities, textiles</td>
+            </tr>
+            <tr>
+              <td class="cn">International Trade City, District 5<span class="meta-line">国际商贸城五区 · 稠州北路555号五区</span></td>
+              <td>7,000+ booths. F1: imported food, clothing, crafts, African products exhibition. F2: bedding, wedding supplies, wigs, pet supplies. F3: curtain fabrics, knitted textiles.</td>
+              <td>Imported goods, bedding, auto accessories. District 5 is the inverse direction: Yiwu sells <em>to</em> China.</td>
+            </tr>
+            <tr>
+              <td class="cn">Global Digital Trade Centre<span class="meta-line">全球数贸中心 · 全球数贸中心</span></td>
+              <td>The 6th-generation market. 1.25m sqm footprint, 310,000 sqm trading space, 7 towers, 1,001 apartments, 3,700+ merchants. ~30 sqm stalls.</td>
+              <td>Drones, exoskeletons, humanoid robots, smart equipment. New categories: creative collectibles, fragrances, hand-beaded items, fashion toys.</td>
+            </tr>
+            <tr>
+              <td class="cn">Huangyuan Garment Market<span class="meta-line">篡园服装市场 · 篡园路238号</span></td>
+              <td>Clothing and garments, complementary to the Trade City complex. Opens 07:30 to 20:30, longer hours than the main complex.</td>
+              <td>Apparel, with longer trading hours</td>
+            </tr>
+            <tr>
+              <td class="cn">Xingzhong Jewelry &amp; Accessories<span class="meta-line">兴中饰品市场 · 兴中村 (福田市场附近)</span></td>
+              <td>3,000+ shops across 5 blocks. Yiwu's earliest-developed jewelry market.</td>
+              <td>Hair accessories, costume jewelry, DIY craft components</td>
+            </tr>
+            <tr>
+              <td class="cn">Binwang Night Market<span class="meta-line">宾王夜市 · 宾王路158号</span></td>
+              <td>10,730 sqm, 800+ stalls. Opens after the main market closes: summer 18:30, winter 17:30.</td>
+              <td>Daily necessities, clothes, crafts. A working market, not a tourist attraction.</td>
+            </tr>
+            <tr>
+              <td class="cn">Meihu Inventory Street<span class="meta-line">梅湖库存专业街 · 近五爱村</span></td>
+              <td>2,000+ vendors selling tail-end and clearance stock by weight (按斤) or lot (按包).</td>
+              <td>Deep-discount tail goods. Mostly domestic Chinese resellers, but accessible to foreign buyers.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="callout">
+        <span class="callout-label">The District 5 paradox</span>
+        <p>Most English-language guides describe Yiwu as the place to source goods <em>from</em> China. District 5 inverts that. Around 150,000 foreign-specialty goods from more than a hundred countries sit on its floors: Korean cosmetics, Iranian saffron, Middle Eastern handicrafts. It is where Chinese resellers source overseas goods to sell into the domestic market, and it is almost completely missing from English coverage. For a video series, this is one of the strongest hidden-story angles.</p>
+      </div>
+
+      <aside class="evidence">
+        <div class="evidence-head">
+          <span class="ev-mark">§3</span>
+          <span class="label">Evidence &amp; sources</span>
+        </div>
+        <ul class="evidence-list">
+          <li>
+            <span class="src">Yiwu Trade City official directory, 义乌购 platform</span>
+            <span class="note">Booth counts, floor layouts, and addresses for Districts 1 through 5.</span>
+          </li>
+          <li>
+            <span class="src">Gen 6 Global Digital Trade Centre press materials, October 2025</span>
+            <span class="note">Trading space figures, stall size, merchant count, demographic mix.</span>
+          </li>
+          <li>
+            <span class="src">Chinese-language sourcing forums (Stream 3)</span>
+            <span class="note">Meihu inventory street and the "按斤 / 按包" pricing convention. Rarely covered in English.</span>
+          </li>
+        </ul>
+      </aside>
+    </section>
+
+    <!-- ==========  SECTION 4 · SUPPLIERS  ========== -->
+    <section id="suppliers">
+      <div class="section-anchor">
+        <span class="section-num">§ 4</span>
+        <span class="section-divider"></span>
+      </div>
+      <h2>The supplier landscape.</h2>
+      <p class="intro-p">Yiwu's seller mix runs differently from Guangzhou's. Most booths are trading companies, not factories. MOQs are far lower than the rest of China for fashion jewelry and simple commodities. Payment is overwhelmingly informal, and the cost of that informality is the single biggest risk in the city.</p>
+
+      <h3>The three seller types</h3>
+      <p>The majority of Trade City booths are trading companies. Real factory display stores are the harder find, but they reward the work. Agents are the third route, especially for buyers who do not speak Mandarin.</p>
+
+      <div class="two-col">
+        <div>
+          <h5><span class="dot"></span>Trading companies <span class="cn-term">贸易商</span></h5>
+          <p>The majority of booths. Mark up 10 to 20% above factory price but accept far lower MOQs.</p>
+          <dl>
+            <dt>Price</dt><dd>10 to 20% above factory</dd>
+            <dt>MOQ</dt><dd>50 to 70% lower than factory-direct</dd>
+            <dt>Best for</dt><dd>First-timers, low-volume buyers</dd>
+          </dl>
+        </div>
+        <div>
+          <h5 class="alt"><span class="dot"></span>Factory display stores <span class="cn-term">工厂展示店</span></h5>
+          <p>Single-brand, single-style booths. Lower prices, better quality guarantees, harder to find.</p>
+          <dl>
+            <dt>Tell</dt><dd>Sparse single-brand display vs crowded multi-brand</dd>
+            <dt>Price</dt><dd>Lower than trading-company booths</dd>
+            <dt>Best for</dt><dd>Repeat buyers with volume</dd>
+          </dl>
+        </div>
+      </div>
+
+      <h3>Sourcing agents, the third route</h3>
+      <p>An in-market guide runs $50 to $120 a day. On commission deals, the tiers run by order size: 8 to 10% on $1,000 to $5,000 orders, 5 to 8% on $5,000 to $20,000, 3 to 5% on $20,000-plus. The zero-commission agent is a scam pattern: they take kickbacks from suppliers, and the buyer pays invisibly.</p>
+
+      <h3>MOQ reality, indexed</h3>
+      <p>Yiwu MOQs sit well below the rest of China for low-complexity items. Anything needing a mould tells a different story.</p>
+
+      <figure class="comp-figure">
+        <div class="comp-figure-head">
+          <span class="ft">Minimum order quantity by category</span>
+          <span class="fl">Trade-city floor versus factory-direct</span>
+        </div>
+        <div class="comp-rows">
+          <div class="comp-row">
+            <span class="comp-label">Fashion jewelry, floor</span>
+            <div class="comp-bar"><div class="comp-bar-fill" style="width: 1%;"></div></div>
+            <span class="comp-val">6-12</span>
+          </div>
+          <div class="comp-row">
+            <span class="comp-label">Simple commodities, 1 carton</span>
+            <div class="comp-bar"><div class="comp-bar-fill s3" style="width: 2%;"></div></div>
+            <span class="comp-val">50-100</span>
+          </div>
+          <div class="comp-row">
+            <span class="comp-label">Electronics, factory (mould)</span>
+            <div class="comp-bar"><div class="comp-bar-fill s2" style="width: 20%;"></div></div>
+            <span class="comp-val">1k-5k</span>
+          </div>
+          <div class="comp-row">
+            <span class="comp-label">Christmas decor, container only</span>
+            <div class="comp-bar"><div class="comp-bar-fill" style="width: 100%;"></div></div>
+            <span class="comp-val">1 cont.</span>
+          </div>
+        </div>
+        <div class="comp-commentary">
+          A fashion-jewelry buyer can place six to twelve pieces per style and walk out with goods. A Christmas decoration buyer cannot. Wang Chunxiao, a Christmas accessories producer quoted in the research: <em>"We don't accept small orders. Generally minimum is one container."</em> Anything needing a mould (electronics, custom packaging) sits in the 1,000 to 5,000 piece bracket regardless of seller type.
+        </div>
+      </figure>
+
+      <h3>Pricing reality, observed</h3>
+      <p>The Yiwu pricing floor sits 15 to 30% below Guangzhou for comparable basic items. Direct observations from the research:</p>
+
+      <ul class="clean-list">
+        <li><strong>Nail polish:</strong> around 2 RMB per item.</li>
+        <li><strong>Earrings:</strong> around 5 RMB per item.</li>
+        <li><strong>Bracelets:</strong> around 10 RMB per item.</li>
+        <li><strong>Inventory clearance at Meihu:</strong> a few RMB per kilogram, sold by weight.</li>
+        <li><strong>Yiwu jewelry physical floor:</strong> 4.5 to 12.5 RMB per piece in bulk. The 1688 online price for the same items: 6.5 to 12.5 RMB per piece.</li>
+      </ul>
+
+      <h3>Payment norms</h3>
+      <p>The standard is a 30% deposit and 70% balance before shipping. Vendors accept RMB or domestic bank transfer only. Foreign buyers paying direct face 30 currency conversions for 30 suppliers, which is the main reason most buyers cave to agents. A multi-currency account paying suppliers in CNY direct removes the FX layer that traps most foreign buyers.</p>
+
+      <h3>The no-contract default</h3>
+      <p>Most wholesale-market deals are done without any written contract. If quality fails after delivery, there is no signed term to enforce. This is the single biggest structural risk in Yiwu sourcing, and it is the gap that the five named scam patterns below exploit.</p>
+
+      <div class="warn">
+        <span class="callout-label">Five named scam patterns</span>
+        <p>Each of these is a documented importer case file. Treat each one as a checklist item before placing a first order.</p>
+      </div>
+
+      <ol class="call-list">
+        <li><strong>Bait-and-switch quality.</strong> High-quality sample, low-quality bulk delivery.</li>
+        <li><strong>Fake sample fraud.</strong> The supplier sources a competitor's sample to win the order, then delivers their own inferior product.</li>
+        <li><strong>Disappearing supplier.</strong> Stops responding once 100% upfront payment lands.</li>
+        <li><strong>Hidden cost manipulation.</strong> A low headline price, then extras for packaging, customisation, and shipping prep.</li>
+        <li><strong>Zero-commission agent.</strong> Takes kickbacks from suppliers. The buyer pays invisibly through inflated unit prices.</li>
+      </ol>
+
+      <aside class="evidence">
+        <div class="evidence-head">
+          <span class="ev-mark">§4</span>
+          <span class="label">Evidence &amp; sources</span>
+        </div>
+        <ul class="evidence-list">
+          <li>
+            <span class="src">Importer case files (Stream 2, human-voice research)</span>
+            <span class="note">All five scam patterns, the no-contract observation, and the trading-company-versus-factory MOQ comparison.</span>
+          </li>
+          <li>
+            <span class="src">Steve Chou (My Wife Quit Her Job), Tony Sourcing case study</span>
+            <span class="note">Pricing-per-piece observations and the Yiwu vs Guangzhou 15 to 30% gap.</span>
+          </li>
+          <li>
+            <span class="src">36kr Christmas-merchant deep dive, 2025</span>
+            <span class="note">Wang Chunxiao Christmas accessories container-MOQ quote and the margin reality.</span>
+          </li>
+        </ul>
+      </aside>
+    </section>
+
+    <!-- ==========  SECTION 5 · 1688  ========== -->
+    <section id="platform">
+      <div class="section-anchor">
+        <span class="section-num">§ 5</span>
+        <span class="section-divider"></span>
+      </div>
+      <h2>The 1688 search guide.</h2>
+      <p class="intro-p">Yiwu's physical market has the densest digital footprint of any Chinese commodity hub. 1688 carries a dedicated Yiwu vertical, three city-native platforms run in parallel, and the Gen 6 AI sourcing model has already logged more than a billion calls. The right Chinese terms unlock all of it.</p>
+
+      <h3>The five Yiwu-specific search modifiers</h3>
+      <p>City-anchored search is the base move. Five Yiwu-specific modifiers narrow the result set to actually useful suppliers.</p>
+
+      <div class="term-block">
+        <div class="tb-head">Modifiers · refine for Yiwu sellers</div>
+        <div class="term-chips">
+          <span class="term-chip modifier">义乌发货 <span class="py">yiwu fahuo · ships from Yiwu</span></span>
+          <span class="term-chip modifier">义乌源头工厂 <span class="py">yuantou gongchang · source factory</span></span>
+          <span class="term-chip modifier">义乌一件代发 <span class="py">yijian daifa · dropshipping</span></span>
+          <span class="term-chip modifier">义乌库存 <span class="py">kucun · tail-end inventory</span></span>
+          <span class="term-chip modifier">义乌 + [category] <span class="py">city-anchored search</span></span>
+        </div>
+      </div>
+
+      <p class="fine">There is also a dedicated 1688 Yiwu vertical at <code style="font-family: 'JetBrains Mono', monospace; color: var(--ink-softer); background: var(--paper-warm); padding: 2px 6px; border-radius: 3px;">home.1688.com/530fac25.htm</code> that aggregates Yiwu small-commodity sellers in one place.</p>
+
+      <h3>Top categories, Chinese search terms</h3>
+      <p>The category terms below carry the most Yiwu supplier weight. 小商品 is the umbrella term that Yiwu owns.</p>
+
+      <div class="term-block">
+        <div class="tb-head">Categories · Yiwu is the default location</div>
+        <div class="term-cats">
+          <div class="term-cat">
+            <div class="tc-label">Umbrella &amp; volume</div>
+            <div class="term-chips">
+              <span class="term-chip">小商品</span>
+              <span class="term-chip">袜子</span>
+              <span class="term-chip">圣诞用品</span>
+              <span class="term-chip">饰品</span>
+              <span class="term-chip">玩具</span>
+            </div>
+          </div>
+          <div class="term-cat">
+            <div class="tc-label">Cluster-fed</div>
+            <div class="term-chips">
+              <span class="term-chip">五金工具</span>
+              <span class="term-chip">文具</span>
+              <span class="term-chip">包装/印刷</span>
+              <span class="term-chip">头饰</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3>Supplier badge tiers</h3>
+      <p>1688 sells paid credibility tiers. The annual fee a supplier pays signals how much the platform has verified, which makes the badge a useful, if imperfect, filter. The Yiwu-specific reading is below.</p>
+
+      <div class="table-wrap">
+        <table class="compare">
+          <thead>
+            <tr>
+              <th>Badge</th>
+              <th>Annual fee</th>
+              <th>What it signals</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="cn">超级工厂<span class="meta-line">Super Factory</span></td>
+              <td class="num">Highest tier</td>
+              <td>Real factory verification plus capability audit.</td>
+            </tr>
+            <tr>
+              <td class="cn">实力商家<span class="meta-line">Power Seller</span></td>
+              <td class="num">28,000 元<span class="meta-line">58,000 元 for women's apparel</span></td>
+              <td>Verified capability, deposit posted.</td>
+            </tr>
+            <tr>
+              <td class="cn">金牌供应商<span class="meta-line">Gold Supplier</span></td>
+              <td class="num">Verified tier</td>
+              <td>Verified factory.</td>
+            </tr>
+            <tr>
+              <td class="cn">诚信通<span class="meta-line">Chengxintong</span></td>
+              <td class="num">6,688 元</td>
+              <td>Business licence only. The lowest verified tier.</td>
+            </tr>
+            <tr>
+              <td class="cn">普通商家 / 新店铺<span class="meta-line">Plain / new shop</span></td>
+              <td class="num">No fee</td>
+              <td>Unverified. Avoid.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>Beyond the badge, check <strong>成交</strong> (transactions) and <strong>评价</strong> (reviews). High numbers plus recent activity is a safer signal than the badge alone.</p>
+
+      <h3>The three Yiwu-native platforms</h3>
+      <p>Beyond 1688, three platforms run by the Yiwu Small Commodity Group cover the city natively. The fourth listing below is the AI sourcing model launched with the Gen 6 Centre.</p>
+
+      <ul class="clean-list">
+        <li><strong>义乌购 <span class="cn-term">(yiwugo.com)</span>:</strong> the official Yiwu Small Commodity City platform. More than 500,000 products across 26 categories. Connects directly to physical Trade City booths via 360-degree store views.</li>
+        <li><strong>Chinagoods 平台:</strong> the official group platform, now AI-integrated with the new Digital Trade Centre.</li>
+        <li><strong>义采宝:</strong> the mobile app from the Yiwu Small Commodity Group. Factory search, B2B sourcing, 10 million-plus buyer database.</li>
+        <li><strong>World Yiwu Commerce Large Model:</strong> the AI launched with Gen 6. Thirteen products including 小商AI视创 (one-take product video generation in 116 languages), real-time translation glass screens, and the AI 老板娘 virtual sales assistant. Already 30,000-plus users and a billion-plus AI calls.</li>
+        </ul>
+
+      <div class="callout">
+        <span class="callout-label">The 1688 paradox</span>
+        <p>Top-volume 1688 Yiwu sellers are usually trading companies, not factories. Real factories run lousy 1688 stores because the owners are busy producing and cannot hire e-commerce talent (and factory locations are often too remote). Highest volume on 1688 does not equal best source. The combined play is to find candidate suppliers online, then verify them physically at Futian.</p>
+      </div>
+
+      <aside class="evidence">
+        <div class="evidence-head">
+          <span class="ev-mark">§5</span>
+          <span class="label">Evidence &amp; sources</span>
+        </div>
+        <ul class="evidence-list">
+          <li>
+            <span class="src">1688 platform research (Stream 1)</span>
+            <span class="note">Yiwu vertical URL, all five modifier terms, badge-tier fee structure.</span>
+          </li>
+          <li>
+            <span class="src">Yiwu Small Commodity Group, Chinagoods official materials</span>
+            <span class="note">义乌购, Chinagoods, and 义采宝 product scope and user numbers.</span>
+          </li>
+          <li>
+            <span class="src">Gen 6 Digital Trade Centre AI launch coverage</span>
+            <span class="note">World Yiwu Commerce Large Model product list, user count, call volume.</span>
+          </li>
+        </ul>
+      </aside>
+    </section>
+
+    <!-- ==========  SECTION 6 · TRADE SHOW  ========== -->
+    <section id="tradeshow">
+      <div class="section-anchor">
+        <span class="section-num">§ 6</span>
+        <span class="section-divider"></span>
+      </div>
+      <h2>The trade-show hook.</h2>
+      <p class="intro-p">Yiwu's 2026 calendar carries one flagship show, three category fairs, and one mainstream-media moment. The Commodities Fair in October is the headline; the rest fill the year and stack neatly with Guangzhou's Canton Fair.</p>
+
+      <h3>2026 Yiwu trade-show calendar</h3>
+      <p>The Commodities Fair (义博会) in October is the flagship. The four category shows around it run inside the Yiwu International Expo Center on Zongze East Road.</p>
+
+      <div class="table-wrap">
+        <table class="compare">
+          <thead>
+            <tr>
+              <th>Show</th>
+              <th>Dates</th>
+              <th>Scale</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="brand">Yiwu Hardware &amp; Electrical Appliances Fair</td>
+              <td class="num">Apr 20-22, 2026</td>
+              <td>1,200+ exhibitors, 50k visitors, 50k sqm. Verified.</td>
+            </tr>
+            <tr>
+              <td class="brand">Yiwu Gifts, Fashion &amp; Household Expo</td>
+              <td class="num">May 16-18, 2026</td>
+              <td>Yiwu International Expo Center. Single-source, confirm closer to date.</td>
+            </tr>
+            <tr>
+              <td class="brand">TOYEXPO, 3rd Yiwu Toy &amp; Hobby Expo</td>
+              <td class="num">May 28-30, 2026</td>
+              <td>200+ exhibitors, 28,410 buyers last edition (4,617 overseas). Verified.</td>
+            </tr>
+            <tr>
+              <td class="brand">Yiwu Stationery &amp; Gifts Exhibition</td>
+              <td class="num">Jun 3-5, 2026</td>
+              <td>Yiwu International Expo Center. Single-source, confirm closer to date.</td>
+            </tr>
+            <tr>
+              <td class="brand">China Yiwu International Commodities Fair (义博会)</td>
+              <td class="num">Oct 21-24, 2026</td>
+              <td>2,400+ exhibitors, 180,000+ buyers from 200+ countries, 100,000 sqm. The flagship. Verified.</td>
+            </tr>
+            <tr>
+              <td class="brand">CCTV Spring Festival Gala satellite venue</td>
+              <td class="num">Feb 2026</td>
+              <td>At the Gen 6 Global Digital Trade Centre. The biggest mainstream-China visibility push of the year for Yiwu.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>How Yiwu stacks with Canton Fair</h3>
+      <p>Yiwu to Guangzhou by HSR runs 5 to 13 hours with no direct trains, requiring a Hangzhou West transfer of around 30 minutes. The typical journey is 7 to 8 hours. Many buyers fly Yiwu to Guangzhou direct, the most popular YIW domestic route. Canton Fair runs April and October, overlapping with the Yiwu Hardware Fair (April) and the Commodities Fair (October). Most international buyers stack both cities in one China visit.</p>
+
+      <div class="windows">
+        <div class="window-row">
+          <span class="wr-period">Apr 15 - 22</span>
+          <span class="wr-desc">Canton Fair Phase 1 (Guangzhou) overlaps the Yiwu Hardware Fair. Fly between the two.</span>
+        </div>
+        <div class="window-row">
+          <span class="wr-period">May 28 - 30</span>
+          <span class="wr-desc">TOYEXPO is the cleanest standalone window for a Yiwu-only toy buyer.</span>
+        </div>
+        <div class="window-row">
+          <span class="wr-period">Oct 15 - 24</span>
+          <span class="wr-desc">Canton Fair Phase 1, then straight to the Yiwu Commodities Fair. The flagship double-header.</span>
+        </div>
+      </div>
+
+      <aside class="evidence">
+        <div class="evidence-head">
+          <span class="ev-mark">§6</span>
+          <span class="label">Evidence &amp; sources</span>
+        </div>
+        <ul class="evidence-list">
+          <li>
+            <span class="src">Yiwu International Expo Center calendar, organiser listings</span>
+            <span class="note">Verified dates for the Hardware Fair, TOYEXPO, and Commodities Fair. The Gifts and Stationery dates are single-source and tagged for confirmation in the methodology section.</span>
+          </li>
+          <li>
+            <span class="src">China Railway HSR timetable, YIW airport route data</span>
+            <span class="note">Yiwu-Guangzhou rail and air options, transfer requirement at Hangzhou West.</span>
+          </li>
+        </ul>
+      </aside>
+    </section>
+
+    <!-- ==========  SECTION 7 · CULTURE  ========== -->
+    <section id="culture">
+      <div class="section-anchor">
+        <span class="section-num">§ 7</span>
+        <span class="section-divider"></span>
+      </div>
+      <h2>The cultural insider tip.</h2>
+      <p class="intro-p">Yiwu has its own etiquette. It is not the haggle-market culture Western buyers expect, and getting the rules right is the difference between a productive week and a wasted one. Nine practical tips, most missing from English guides.</p>
+
+      <h3>Wholesale-only after 4pm</h3>
+      <p>The Trade City operates wholesale-only after 4pm. Tourists and individual buyers should be in and out 10am to 4pm. After 4pm shops are packing and shipping, not selling retail. Most English guides miss this.</p>
+
+      <h3>Retail-friendly vs pure-B2B districts</h3>
+      <p>Districts 1 and 5 are the retail-friendly zones: best designs, highest energy, most willing to sell single units to walk-ins. Districts 2 through 4 are pure B2B.</p>
+
+      <h3>The three-piece minimum rule <span class="cn">尾货三件起拿</span></h3>
+      <p>In District 5: single units priced as retail, lots of three priced as wholesale. Buying three of anything saves around 30%.</p>
+
+      <h3>Pricing is <span class="cn-term">因人而异</span> (varies by buyer)</h3>
+      <p>Vendor pricing changes based on who you are. The standard local trick is to lurk near another buyer, listen to their negotiation, then approach with that anchor. Bringing an empty rolling suitcase signals you know the game and reduces the foreign-buyer upcharge.</p>
+
+      <h3>Plan with apps before arriving</h3>
+      <p>Use 小红书 (Xiaohongshu) plus the 义乌购 app to lock down specific shop numbers (门牌号) before arriving. Random wandering equals a wasted day. Every local serious buyer does this.</p>
+
+      <h3><span class="cn">万国美食</span> is hyper-segmented</h3>
+      <p>The international food street near District 5 is not one "Middle Eastern" zone. It is Afghan, Syrian, Iranian, Jordanian, Yemeni, Turkish, Egyptian, each a separate restaurant. Some have one or two hour waits. This is where foreign buyers eat nightly and where deals get done over meals.</p>
+
+      <h3><span class="cn">三挺路</span> (Santing Road) night market</h3>
+      <p>Where merchants and visiting buyers end the day. Small eats, clothing, accessories. "Taiwan night market vibe." Yiwu's after-hours social anchor.</p>
+
+      <h3>Yiwu vendors are not pushy</h3>
+      <p>This surprises Western buyers expecting haggle-market culture. Negotiation in Yiwu is multi-meeting, not first-encounter.</p>
+
+      <div class="pull">
+        "What I like about Yiwu Market suppliers is that they aren't aggressive or pushy. You can browse freely."
+        <cite>Steve Chou, My Wife Quit Her Job</cite>
+      </div>
+
+      <h3>The dawn language plaza</h3>
+      <p>Yiwu vendors line up at sunrise in the market square for free Spanish and Arabic classes. Loudspeakers blast phrases. A 55-year-old vendor named Yao Baojuan rides a 20-year-old bicycle to her 18th Spanish class of the month.</p>
+
+      <div class="pull">
+        "Just learning English isn't enough. We're not doing business with just one country but with the world."
+        <cite>Yao Baojuan, Yiwu vendor</cite>
+      </div>
+
+      <aside class="evidence">
+        <div class="evidence-head">
+          <span class="ev-mark">§7</span>
+          <span class="label">Evidence &amp; sources</span>
+        </div>
+        <ul class="evidence-list">
+          <li>
+            <span class="src">Chinese-language sourcing forums and Bilibili creator videos (Stream 3)</span>
+            <span class="note">The 4pm wholesale-only rule, the 尾货三件起拿 three-piece rule, the 因人而异 anchor-pricing convention, the 万国美食 segmentation, and the dawn language plaza.</span>
+          </li>
+          <li>
+            <span class="src">Steve Chou, Yao Baojuan press coverage</span>
+            <span class="note">Direct quotes on negotiation style and the multilingual-vendor culture.</span>
+          </li>
+        </ul>
+      </aside>
+    </section>
+
+    <!-- ==========  SECTION 8 · LOGISTICS  ========== -->
+    <section id="logistics">
+      <div class="section-anchor">
+        <span class="section-num">§ 8</span>
+        <span class="section-divider"></span>
+      </div>
+      <h2>Travel &amp; logistics.</h2>
+      <p class="intro-p">The practical layer. Most international buyers fly into Hangzhou Xiaoshan and take HSR to Yiwu, because the local airport is domestic-only. There is no metro yet, which means taxis for everything inside the city.</p>
+
+      <h3>Airports</h3>
+      <p><strong>Yiwu Airport (YIW)</strong> is domestic only. Top routes: Guangzhou, Beijing, Shenzhen, Shantou, Shanghai. Carriers: China Eastern, China Southern, Hainan. <strong>Hangzhou Xiaoshan (HGH)</strong> sits 105 to 130 km away, around 1h 27min by car ($16 to $24) or 2h 25min by bus ($9 to $15). Most international buyers fly into HGH then take HSR. <strong>Shanghai Pudong (PVG) and Hongqiao (SHA)</strong> are feasible via Hongqiao plus HSR.</p>
+
+      <h3>High-speed rail</h3>
+      <p>Yiwu Railway Station sits 11 km from Futian Market. The headline runs:</p>
+
+      <div class="table-wrap">
+        <table class="compare">
+          <thead>
+            <tr>
+              <th>Route</th>
+              <th>Time</th>
+              <th>Daily departures</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="brand">Hangzhou</td><td class="num">33 min - 1h 02min</td><td>56</td></tr>
+            <tr><td class="brand">Shanghai (Hongqiao / Songjiang / South)</td><td class="num">1h 22min - 2h 59min</td><td>42</td></tr>
+            <tr><td class="brand">Beijing South</td><td class="num">6h 36min - 9h 41min</td><td>3</td></tr>
+            <tr><td class="brand">Guangzhou (transfer Hangzhou West)</td><td class="num">5h 05min - 13h 09min, typical 7-8h</td><td>3</td></tr>
+            <tr><td class="brand">Shenzhen North (D377)</td><td class="num">8h 45min</td><td>1</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>Taxi from Yiwu Railway Station to Futian Market is around 25 minutes and 35 RMB. Bus 801 plus a 560m walk is the alternative.</p>
+
+      <h3>City transport</h3>
+      <p>No metro yet, under construction. Taxis are metered, cheap, safe, no negotiation. Buses stop around 6 to 7pm near the markets. Didi works. Walking between districts inside the market is standard.</p>
+
+      <h3>When NOT to visit</h3>
+      <p>Two long shutdowns and three category-rush windows to avoid if turnaround speed matters.</p>
+
+      <div class="windows">
+        <div class="window-row avoid">
+          <span class="wr-period">Feb 8 - 28, 2026</span>
+          <span class="wr-desc">Chinese New Year (Spring Festival on 17 Feb). Market fully closed. Full reopening 1 March 2026. Arrive no later than 20 January if goods must ship before CNY.</span>
+        </div>
+        <div class="window-row avoid">
+          <span class="wr-period">Oct 1 - 7, 2026</span>
+          <span class="wr-desc">National Day Golden Week. Market typically closed. The Commodities Fair (Oct 21-24) intentionally runs after Golden Week.</span>
+        </div>
+        <div class="window-row avoid">
+          <span class="wr-period">Aug - Oct</span>
+          <span class="wr-desc">Christmas product peak. Factories at capacity, fast turnaround not realistic.</span>
+        </div>
+        <div class="window-row avoid">
+          <span class="wr-period">Dec - early Feb</span>
+          <span class="wr-desc">Pre-CNY rush. Capacity tight.</span>
+        </div>
+        <div class="window-row avoid">
+          <span class="wr-period">Mid-Sept</span>
+          <span class="wr-desc">Pre-Golden Week. Capacity tight.</span>
+        </div>
+      </div>
+
+      <h3>Accommodation near Futian Market</h3>
+      <p>Prices in RMB per night. Trade-show periods (April, May, June, October) push prices noticeably higher.</p>
+
+      <div class="table-wrap">
+        <table class="compare">
+          <thead>
+            <tr>
+              <th>Tier</th>
+              <th>Range RMB / night</th>
+              <th>Examples</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="brand">Budget</td><td class="num">150 - 300</td><td>Bogao Hotel, Yiwu Yuejia</td></tr>
+            <tr><td class="brand">Mid-range</td><td class="num">300 - 500</td><td>Bali Yating, Kasion International</td></tr>
+            <tr><td class="brand">Comfort</td><td class="num">500 - 800</td><td>Lv Gu Hotel</td></tr>
+            <tr><td class="brand">Luxury</td><td class="num">800+</td><td>Yiwu Marriott, Shangri-La Yiwu</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>The cost of a 3-day sourcing trip</h3>
+      <p>From Western Europe or North America, a 3-day Yiwu trip lands in the $1,700 to $2,600 range with an agent, $1,400 to $2,300 without. A 7 to 10-day trip costs $2,500 to $3,500: once the flight is paid, the marginal cost of staying longer is small.</p>
+
+      <div class="stats-row">
+        <div class="stat">
+          <div class="stat-num">$1.2-2k</div>
+          <div class="stat-lbl">Round-trip flights, Western Europe / North America</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">$90-180</div>
+          <div class="stat-lbl">Hotel, 3 nights mid-range</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">$300</div>
+          <div class="stat-lbl">English-speaking sourcing agent, optional, 3 days</div>
+        </div>
+      </div>
+
+      <aside class="evidence">
+        <div class="evidence-head">
+          <span class="ev-mark">§8</span>
+          <span class="label">Evidence &amp; sources</span>
+        </div>
+        <ul class="evidence-list">
+          <li>
+            <span class="src">Yiwu Airport, China Railway HSR data, China Eastern route catalogue</span>
+            <span class="note">YIW domestic route list, HGH-Yiwu transfer, and all five HSR routes with verified departure counts.</span>
+          </li>
+          <li>
+            <span class="src">Hotel pricing aggregators, Yiwu trade-show calendar overlay</span>
+            <span class="note">Accommodation tier pricing. Trade-show period inflation noted separately.</span>
+          </li>
+        </ul>
+      </aside>
+    </section>
+
+    <!-- ==========  SECTION 9 · STORIES  ========== -->
+    <section id="stories">
+      <div class="section-anchor">
+        <span class="section-num">§ 9</span>
+        <span class="section-divider"></span>
+      </div>
+      <h2>Importer stories &amp; angles.</h2>
+      <p class="intro-p">Raw findings from the human-voice research stream. Real buyer quotes, scam stories, container-consolidation maths, and the Christmas paradox. This is the texture that turns a research brief into a watchable video.</p>
+
+      <h3>Things that surprised buyers</h3>
+      <p>Five repeating reactions across post-trip writeups, forum threads, and Steve Chou's Yiwu posts.</p>
+
+      <ul class="clean-list">
+        <li><strong>The scale breaks brains within an hour.</strong> Nick, a Sydney restaurant owner and Canton Fair veteran: "Tony, I'm speechless. I've never seen anything like this. I knew it was big, but this is a total eye-opener."</li>
+        <li><strong>Four days is not enough.</strong> A CNN photographer walked four straight days and still didn't finish: "I spent four days constantly walking around Yiwu and wouldn't say I got near to seeing all of the stalls."</li>
+        <li><strong>Vendors are not pushy.</strong> The opposite of what Western buyers expect from haggle markets.</li>
+        <li><strong>Christmas factories don't celebrate Christmas.</strong> Worker Xiao Wei guessed Christmas was "foreigners' New Year?"</li>
+        <li><strong>The dawn language classes</strong> in the market plaza.</li>
+      </ul>
+
+      <h3>Common first-timer mistakes</h3>
+      <p>The same errors recur across every importer account.</p>
+
+      <ul class="clean-list">
+        <li><strong>Trying to source everything in one trip.</strong> The most-cited regret.</li>
+        <li><strong>Treating every booth as opportunity</strong> instead of going deep. NYU student researcher: "Less is more."</li>
+        <li><strong>Negotiating on first meeting.</strong> "In reality, it requires multiple meetings."</li>
+        <li><strong>Skipping booth code and WeChat capture.</strong> Coming home with photos and no way to find the supplier.</li>
+        <li><strong>Paying 100% upfront.</strong></li>
+        <li><strong>Showing up without a VPN.</strong> Google and WhatsApp are blocked on the mainland.</li>
+        <li><strong>Wearing the wrong shoes.</strong> 10,000-plus steps a day is normal.</li>
+      </ul>
+
+      <h3>Container consolidation, with real numbers</h3>
+      <p>One of the strongest economics stories in the brief. Consolidating five suppliers into one 12 CBM shipment cut a documented case from $3,380 to $2,160, a 36% saving. Typical savings range from 20 to 40%, sometimes more. The catch: goods sent to a warehouse without a shipping mark (such as ABC-123-USA) often arrive as random unbranded boxes and go missing.</p>
+
+      <div class="stats-row">
+        <div class="stat">
+          <div class="stat-num">36<span class="unit">%</span></div>
+          <div class="stat-lbl">Saving on a documented 12 CBM, 5-supplier shipment</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">30<span class="unit">m</span></div>
+          <div class="stat-lbl">Packages Yiwu dispatches globally per day</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">1,200</div>
+          <div class="stat-lbl">Container trucks Yiwu sends to port daily</div>
+        </div>
+      </div>
+
+      <p>40HQ is the standard container choice for mixed loads.</p>
+
+      <h3>The Christmas paradox</h3>
+      <p>Yiwu produces 60 to 80% of the world's Christmas decorations. Peak production runs June to July, under Chinese summer heat. Most workers have never celebrated the holiday. A father-son duo from Guizhou: 10 hours a day, 7am to 9pm, 5,000 ornaments daily, a 60 sqm workshop, 3,000 RMB per month, 10 face masks a day. A whole shop in Yiwu sells nothing but elves. Net margins have compressed from around 40% historically to 15% today, "considered excellent."</p>
+
+      <h3>Quotable lines</h3>
+      <p>The strongest direct-quote candidates for the script, source-tagged in the human-voice stream.</p>
+
+      <div class="pull">
+        "If you see a character in a movie that premiered yesterday, you can have that toy produced today. Only in Yiwu."
+        <cite>Wu, hardware merchant. Global Times, 2025.</cite>
+      </div>
+
+      <div class="pull">
+        "When I first arrived in Yiwu, I only had 100 yuan in my pocket."
+        <cite>Wu, hardware merchant. The poverty-to-empire arc.</cite>
+      </div>
+
+      <div class="pull">
+        "Most items with well-known brand names in the Yiwu market are knock-offs."
+        <cite>Steve Chou, My Wife Quit Her Job</cite>
+      </div>
+
+      <div class="pull">
+        "They're painted by hand, each ball. Each worker paints hundreds of balls a day."
+        <cite>Chen Xilin, Elim Christmas Decorations</cite>
+      </div>
+
+      <div class="pull">
+        "Apart from Chinese New Year, we make trees every day, even on Christmas Day."
+        <cite>Reng Guoan, Sinte An, 1m+ artificial trees a year</cite>
+      </div>
+
+      <div class="pull">
+        "The US hopes tariffs will force manufacturers to relocate outside of China, but replicating our supply chain is nearly impossible."
+        <cite>Shi Mi, Danmi Tools</cite>
+      </div>
+
+      <div class="pull">
+        "You can find anything here, but you can also get lost in minutes."
+        <cite>Nick, day one in Yiwu</cite>
+      </div>
+
+      <aside class="evidence">
+        <div class="evidence-head">
+          <span class="ev-mark">§9</span>
+          <span class="label">Evidence &amp; sources</span>
+        </div>
+        <ul class="evidence-list">
+          <li>
+            <span class="src">Global Times, 36kr Christmas merchant deep dive, CNN feature</span>
+            <span class="note">Quotable lines from Wu, Christmas-factory worker accounts, scale observations.</span>
+          </li>
+          <li>
+            <span class="src">Steve Chou (My Wife Quit Her Job), Tony Sourcing, NYU student researcher</span>
+            <span class="note">Knock-off observation, "less is more" advice, and multi-meeting negotiation norms.</span>
+          </li>
+          <li>
+            <span class="src">Yiwu Customs daily-dispatch figures</span>
+            <span class="note">30 million packages and 1,200 container trucks per day.</span>
+          </li>
+        </ul>
+      </aside>
+    </section>
+
+    <!-- ==========  SECTION 10 · BILIBILI  ========== -->
+    <section id="bilibili">
+      <div class="section-anchor">
+        <span class="section-num">§ 10</span>
+        <span class="section-divider"></span>
+      </div>
+      <h2>The Chinese perspective.</h2>
+      <p class="intro-p">The Chinese-language research stream tells a markedly different story from English sources. One Bilibili video sits an order of magnitude above the rest, and the signal it carries is unambiguous: the demand is for navigation, not B2B sourcing analysis.</p>
+
+      <h3>The single most-viewed Yiwu video</h3>
+      <p>One video dominates the topic on Bilibili: <strong>"义乌会惩罚每一个不做攻略的人"</strong> ("Yiwu punishes those who don't prepare"), at <strong>1.627 million views</strong>. The next-biggest pieces on the topic sit at less than two-thirds of that, and the long tail drops fast. The signal is unambiguous: the demand is for navigational content, not for B2B sourcing analysis. This is the primary YouTube SEO direction for the episode.</p>
+
+      <figure class="comp-figure">
+        <div class="comp-figure-head">
+          <span class="ft">Yiwu on Bilibili, top topics by views</span>
+          <span class="fl">Views, snapshot 2025</span>
+        </div>
+        <div class="comp-rows">
+          <div class="comp-row">
+            <span class="comp-label">"Yiwu punishes the unprepared"</span>
+            <div class="comp-bar"><div class="comp-bar-fill" style="width: 100%;"></div></div>
+            <span class="comp-val">1.63m</span>
+          </div>
+          <div class="comp-row">
+            <span class="comp-label">US orders revive, Christmas 90-day scramble</span>
+            <div class="comp-bar"><div class="comp-bar-fill s2" style="width: 55.8%;"></div></div>
+            <span class="comp-val">908k</span>
+          </div>
+          <div class="comp-row">
+            <span class="comp-label">Jewelry sourcing guide</span>
+            <div class="comp-bar"><div class="comp-bar-fill s2" style="width: 12.3%;"></div></div>
+            <span class="comp-val">200k</span>
+          </div>
+          <div class="comp-row">
+            <span class="comp-label">Solo walk-through 70k shops</span>
+            <div class="comp-bar"><div class="comp-bar-fill s3" style="width: 12.0%;"></div></div>
+            <span class="comp-val">195k</span>
+          </div>
+          <div class="comp-row">
+            <span class="comp-label">Consumer-view-collapsing pricing reveal</span>
+            <div class="comp-bar"><div class="comp-bar-fill s3" style="width: 7.6%;"></div></div>
+            <span class="comp-val">123k</span>
+          </div>
+          <div class="comp-row">
+            <span class="comp-label">Yiwu cheaper than overseas travel</span>
+            <div class="comp-bar"><div class="comp-bar-fill s4" style="width: 7.5%;"></div></div>
+            <span class="comp-val">122k</span>
+          </div>
+          <div class="comp-row">
+            <span class="comp-label">Blind-explore source factories, accessories</span>
+            <div class="comp-bar"><div class="comp-bar-fill s4" style="width: 5.2%;"></div></div>
+            <span class="comp-val">85k</span>
+          </div>
+        </div>
+        <div class="comp-commentary">
+          The runaway #1 at 1.63 million views is navigational, not analytical. The runner-up at 908k is a Christmas-factory scramble story. <strong>"Don't get fleeced" navigation content is the dominant viral genre</strong> on Yiwu. Factory-village discovery vlogs (Datang socks, Pujiang crystal) and "Yiwu pricing is cheaper than you can imagine" reveals make up the second and third patterns.
+        </div>
+      </figure>
+
+      <h3>What Chinese sources reveal that English sources miss</h3>
+      <p>Six specific gaps where the English consensus and the Chinese reality diverge. These are the strongest hidden-story candidates.</p>
+
+      <div class="proscons-stacked">
+        <div class="pc-block cons">
+          <h4><span class="dot"></span>English says vs Chinese reality</h4>
+          <div class="pc-items">
+            <div class="pc-item">
+              <span class="pc-item-head">District 5 is "just imports"</span>
+              <p><strong>Reality:</strong> District 5 inverts the Yiwu model. 150,000 foreign-specialty goods from 100+ countries sold to Chinese resellers. Almost completely absent from English guides.</p>
+            </div>
+            <div class="pc-item">
+              <span class="pc-item-head">Meihu is for resellers only</span>
+              <p><strong>Reality:</strong> Meihu inventory street sells tail-end stock by weight (按斤) or lot (按包). Open to foreign buyers but rarely flagged.</p>
+            </div>
+            <div class="pc-item">
+              <span class="pc-item-head">"Visit during business hours"</span>
+              <p><strong>Reality:</strong> wholesale-only after 4pm. The afternoon window is for packing, not selling.</p>
+            </div>
+            <div class="pc-item">
+              <span class="pc-item-head">"Middle Eastern food street"</span>
+              <p><strong>Reality:</strong> 万国美食 is hyper-segmented. Afghan, Syrian, Iranian, Jordanian, Yemeni, Turkish, Egyptian are all distinct restaurants. Some have 1-2 hour waits.</p>
+            </div>
+            <div class="pc-item">
+              <span class="pc-item-head">"Three-piece minimum is informal"</span>
+              <p><strong>Reality:</strong> 尾货三件起拿 is a hard wholesale-vs-retail boundary in District 5. Saves around 30% per piece.</p>
+            </div>
+            <div class="pc-item">
+              <span class="pc-item-head">"Top 1688 seller = best supplier"</span>
+              <p><strong>Reality:</strong> top-volume 1688 Yiwu sellers are usually trading companies. Real factories run lousy 1688 stores.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3>Gen 6 Digital Trade Centre, Chinese coverage</h3>
+      <p>The top opening-day Bilibili video sits at 36,000 views, moderate not yet viral. Three creator angles are emerging: black-tech showcases (黑科技 / AI), historical-significance pieces ("today's Yiwu vs the Xie Gaohua era"), and behind-the-scenes merchant-bidding clips. The CCTV Spring Festival Gala satellite venue in February 2026 will be the biggest mainstream visibility push.</p>
+
+      <h3>2024-25 market conditions Chinese creators are reporting</h3>
+      <p>The aggregate-versus-individual divergence is the most important headline. Aggregate trade is at a record, but individual Christmas merchants in 36kr report "5 to 6 buyers on good days, zero on bad days."</p>
+
+      <ul class="clean-list">
+        <li><strong>Foreign buyer flow is bifurcating.</strong> Aggregate at record high, individual experience patchy.</li>
+        <li><strong>Old US and Middle East accounts are shrinking,</strong> replaced by new Latin America and Africa entrants.</li>
+        <li><strong>Latin America is the 2025 dark horse.</strong> Colombia and Mexico merchants report nearly 5x increase in foreign-buyer counts.</li>
+        <li><strong>Christmas peak shifted forward two months in 2025</strong> (factories at full capacity by April vs the traditional June to August peak).</li>
+        <li><strong>Christmas merchant net margins crushed</strong> from around 40% historically to 15% "considered excellent" today.</li>
+        <li><strong>The Trump 145% tariff (April 2025) caused immediate scheduling chaos</strong> but did not collapse the trade. Five US clients simultaneously demanded priority shipments.</li>
+        <li><strong>Outdoor goods category is booming</strong> on "lightweight upgrade" demand.</li>
+        <li><strong>Yiwu is becoming a 4+4+X industrial system.</strong> NEVs up 200% in 2025, driven by a Geely factory.</li>
+      </ul>
+
+      <aside class="evidence">
+        <div class="evidence-head">
+          <span class="ev-mark">§10</span>
+          <span class="label">Evidence &amp; sources</span>
+        </div>
+        <ul class="evidence-list">
+          <li>
+            <span class="src">Bilibili (哔哩哔哩) content analysis</span>
+            <span class="note">All seven top-video view counts, including the 1.627m navigational-content runaway. Original title: "义乌会惩罚每一个不做攻略的人."</span>
+          </li>
+          <li>
+            <span class="src">36kr Christmas-merchant deep dive, Yiwu Customs press conference</span>
+            <span class="note">Aggregate vs individual bifurcation, regional pivot to Africa, ASEAN, Latin America, and the 200% NEV growth figure.</span>
+          </li>
+          <li>
+            <span class="src">CCTV Spring Festival Gala 2026 venue announcement</span>
+            <span class="note">Gen 6 Centre as satellite venue, the year's biggest mainstream visibility push.</span>
+          </li>
+        </ul>
+      </aside>
+    </section>
+
+    <!-- ==========  CONTENT OPPORTUNITIES  ========== -->
+    <section id="opportunities">
+      <div class="section-anchor">
+        <span class="section-num">··</span>
+        <span class="section-divider"></span>
+      </div>
+      <h2>Content opportunities.</h2>
+      <p class="intro-p">Cross-pillar angles drawn from the research: 1688 explainers, AI-tool ideas, economics stories, supplier spotlights, and the two cross-city bridges to the earlier Guangzhou and Shenzhen episodes.</p>
+
+      <h3>1688 content angles, Yiwu-specific</h3>
+      <ul class="clean-list">
+        <li><strong>How to actually filter for Yiwu suppliers on 1688:</strong> a tutorial walking through 义乌发货, 源头工厂, 一件代发, 库存, plus the Yiwu vertical at home.1688.com/530fac25.htm.</li>
+        <li><strong>"Why the top-volume 1688 seller is usually not the factory":</strong> the paradox angle, with side-by-side stores.</li>
+        <li><strong>义乌购 vs Chinagoods vs 义采宝:</strong> which Yiwu-native platform actually works for foreign buyers.</li>
+        <li><strong>Yiwu badge tier walkthrough:</strong> 超级工厂 vs 实力商家 vs 诚信通, with what each really signals.</li>
+      </ul>
+
+      <h3>AI prompt ideas</h3>
+      <ul class="clean-list">
+        <li><strong>"AI-powered product video in 116 languages in 60 seconds":</strong> the 小商AI视创 demo angle, native to the Gen 6 Centre.</li>
+        <li><strong>"Real-time AI translation glass at a Yiwu vendor booth":</strong> demo reel from the new floor.</li>
+        <li><strong>AI 老板娘:</strong> a virtual sales assistant explainer.</li>
+      </ul>
+
+      <h3>Economics angles</h3>
+      <ul class="clean-list">
+        <li><strong>"Cost of a 3-day Yiwu sourcing trip from London / New York":</strong> $1,400 to $2,600, full breakdown.</li>
+        <li><strong>"How much can you actually save by container-consolidating in Yiwu?":</strong> the documented 36% case.</li>
+        <li><strong>"Why margins collapsed from 40% to 15% for Christmas merchants":</strong> the 36kr deep dive in video form.</li>
+        <li><strong>"Sea freight vs Yixin'ou rail to Europe":</strong> the real cost and time tradeoff.</li>
+      </ul>
+
+      <h3>Supplier spotlight candidates</h3>
+      <div class="two-col">
+        <div>
+          <h5><span class="dot"></span>Datang sock factory</h5>
+          <p>A Nike, Adidas, Puma supplier. The cluster cost economics in one piece.</p>
+        </div>
+        <div>
+          <h5><span class="dot"></span>Pujiang crystal workshop</h5>
+          <p>Hand-finished volume at scale, 1,000+ factories, 50,000 workers.</p>
+        </div>
+      </div>
+      <div class="two-col">
+        <div>
+          <h5><span class="dot"></span>Multi-generational Yiwu jewelry vendor</h5>
+          <p>The 商二代 angle, tying to the Gen 6 Centre demographic shift.</p>
+        </div>
+        <div>
+          <h5 class="alt"><span class="dot"></span>Christmas factory boss</h5>
+          <p>The margin reality, the 90-day rush, the "why don't you celebrate it" question.</p>
+        </div>
+      </div>
+
+      <h3>Cross-city comparison videos</h3>
+      <ul class="clean-list">
+        <li><strong>Yiwu vs Guangzhou (the EP.1 bridge):</strong> when to use which, 15 to 30% price gap, MOQ tradeoff, category fit.</li>
+        <li><strong>Yiwu vs Shenzhen (the EP.2 bridge):</strong> consumer goods vs electronics, the structural moat differences.</li>
+        <li><strong>Yiwu vs Alibaba.com:</strong> when physical beats online, the 1688-to-Yiwu hybrid play.</li>
+      </ul>
+    </section>
+
+    <!-- ==========  FAQ SEEDS  ========== -->
+    <section id="faq">
+      <div class="section-anchor">
+        <span class="section-num">··</span>
+        <span class="section-divider"></span>
+      </div>
+      <h2>FAQ seeds.</h2>
+      <p class="intro-p">Question clusters surfaced by the research, grouped into five themes. These seed on-screen FAQ segments, video chapters, and supporting written content.</p>
+
+      <h3>Getting started in Yiwu</h3>
+      <ul class="clean-list">
+        <li>Do I need a sourcing agent in Yiwu, or can I go direct?</li>
+        <li>What's the minimum order quantity at Yiwu market?</li>
+        <li>Can I visit Yiwu market as a tourist or do I need credentials?</li>
+        <li>How long do I need in Yiwu for a productive sourcing trip?</li>
+        <li>What's the best time of year to visit Yiwu?</li>
+      </ul>
+
+      <h3>1688 &amp; online sourcing</h3>
+      <ul class="clean-list">
+        <li>How do I filter for Yiwu-based suppliers on 1688?</li>
+        <li>What's the difference between 义乌购, Chinagoods, and 义采宝?</li>
+        <li>Why is the top 1688 seller usually not the factory?</li>
+        <li>Yiwu physical market vs 1688 online: which gives the better price?</li>
+        <li>Do I need to read Chinese to use 1688 effectively for Yiwu?</li>
+      </ul>
+
+      <h3>Trade shows &amp; markets</h3>
+      <ul class="clean-list">
+        <li>Should I visit during the October Commodities Fair or off-season?</li>
+        <li>What's the difference between the 5 districts of the Trade City?</li>
+        <li>Is the new Global Digital Trade Centre worth visiting?</li>
+        <li>Can I combine Yiwu and Canton Fair in one trip?</li>
+        <li>Which Yiwu trade show is best for my product category?</li>
+      </ul>
+
+      <h3>Pricing, payment &amp; verification</h3>
+      <ul class="clean-list">
+        <li>How do I avoid the bait-and-switch quality scam?</li>
+        <li>What does the 30% / 70% payment structure mean in practice?</li>
+        <li>How do I check if a Yiwu vendor is a real factory or a trading company?</li>
+        <li>What's the price gap between Yiwu and Guangzhou for the same product?</li>
+        <li>How do I pay Yiwu suppliers from overseas without losing 5%+ on FX?</li>
+      </ul>
+
+      <h3>Logistics &amp; practical</h3>
+      <ul class="clean-list">
+        <li>How does container consolidation actually work in Yiwu?</li>
+        <li>What's the Yiwu to Madrid freight train, and should I use it?</li>
+        <li>Yiwu Airport or Hangzhou Xiaoshan: where should I fly into?</li>
+        <li>What's open after the market closes at 4pm?</li>
+        <li>When is the market closed for Chinese New Year 2026?</li>
+      </ul>
+    </section>
+
+    <!-- ==========  RESEARCH METHODOLOGY  ========== -->
+    <section id="verification">
+      <div class="section-anchor">
+        <span class="section-num">··</span>
+        <span class="section-divider"></span>
+      </div>
+      <h2>Research methodology.</h2>
+      <p class="intro-p">This brief is research-grade, not finished fact. The notes below are deliberately honest about how the work was done and which figures still need a human check before they go on screen.</p>
+
+      <h3>How the research was done</h3>
+      <p>The brief ran across three parallel streams: an English-language foundation pass against v2 site verified data, a human-voice pass covering forums and importer accounts, and a Chinese-language pass across Bilibili, Xiaohongshu, and domestic media including 36kr, Global Times, and CCTV. It covered more than fifty web searches across all streams, conducted in May 2026. The ten featured wholesale markets each carry a "verified" rating, meaning the Chinese name and address were confirmed from at least two independent sources.</p>
+
+      <h3>Claims that need human verification</h3>
+      <p>Seven items are explicitly flagged in the source research as unconfirmed or qualified. They are presented here as open questions, not as established facts, and the body above uses them with their qualifiers attached.</p>
+
+      <div class="warn">
+        <span class="callout-label">Flagged for verification before publication</span>
+        <p>The following seven claims require a primary-source check before they can be used on screen as fact.</p>
+      </div>
+
+      <ol class="call-list">
+        <li><strong>Yiwu Imports Fair 2026 dates.</strong> Not confirmed by a primary source. Excluded from the trade-show calendar above.</li>
+        <li><strong>Yiwu Christmas Crafts Fair 2026.</strong> No standalone event confirmed. Reframe as the "Christmas zone within the October Commodities Fair" plus year-round factory production.</li>
+        <li><strong>Yiwu Gifts and Stationery 2026 dates.</strong> Single-source (chilat.com). Cross-reference closer to the event date.</li>
+        <li><strong>Datang socks "35% of global."</strong> A historical (around 2022) figure. Recent state-media coverage cites approximately one-third (33%). Use the framing "70% of China, around one-third of global, 25 to 27 billion pairs a year."</li>
+        <li><strong>Christmas decorations world share.</strong> The 60 to 80% range appears across sources. Use "60 to 80%" or "majority" rather than a single number on screen.</li>
+        <li><strong>Xie Gaohua's 1984 slogan literal translation.</strong> 兴商建县 reads as "prosper the county through commerce." Either phrasing works in English: pick one and stay consistent.</li>
+        <li><strong>Hu Yaobang Yiwu involvement.</strong> Hu Yaobang provided the national reform umbrella as General Secretary, but no source confirms personal Yiwu involvement. Drop him from the Yiwu narrative. The hero is Xie Gaohua.</li>
+      </ol>
+
+      <div class="callout">
+        <span class="callout-label">How to use this brief</span>
+        <p>Everything in sections 1 to 10 is sourced from the three-stream research and safe to script from, with citations shown in each evidence card. The seven items above are not. Any data point to be stated as fact on screen, especially trade-show dates, historical statistics, and global share figures, should get a final primary-source check first.</p>
+      </div>
+
+      <p class="fine" style="margin-top: 32px; color: var(--ink-softer);">Research-doc source: <code style="font-family: 'JetBrains Mono', monospace; color: var(--ink-softer); background: var(--paper-warm); padding: 2px 6px; border-radius: 3px;">yiwu_research.txt</code> · China Sourcing Navigator, Pillar 1: City Deep Dives · Steven Chen · May 2026.</p>
+    </section>
+
+  </main>
+
+</div>
+
+<!-- ==========  FOOTER  ========== -->
+<footer class="site-footer">
+  <div class="left">
+    <img src="images/wf_logo.webp" alt="Ant International · WorldFirst">
+    <span>© 2026 · China Sourcing Map research · Internal use, not for external distribution</span>
+  </div>
+  <div class="right">
+    <a href="#top">Back to top ↑</a>
+  </div>
+</footer>
+
+<script>
+(function() {
+  const progressBar = document.getElementById('progress-bar');
+  const tocLinks = document.querySelectorAll('.toc-list a');
+  const navLinks = document.querySelectorAll('.site-nav a');
+  const sections = document.querySelectorAll('section[id]');
+
+  // Reading progress bar
+  function updateProgress() {
+    const scrolled = window.scrollY;
+    const max = document.documentElement.scrollHeight - window.innerHeight;
+    const pct = (scrolled / max) * 100;
+    progressBar.style.width = Math.min(100, Math.max(0, pct)) + '%';
+  }
+  window.addEventListener('scroll', updateProgress, { passive: true });
+  updateProgress();
+
+  // Active section highlight
+  function updateActive() {
+    const scrollPos = window.scrollY + 120;
+    let activeId = null;
+    sections.forEach(sec => {
+      if (sec.offsetTop <= scrollPos) {
+        activeId = sec.id;
+      }
+    });
+
+    navLinks.forEach(a => {
+      const href = a.getAttribute('href').slice(1);
+      a.classList.toggle('active', href === activeId);
+    });
+    tocLinks.forEach(a => {
+      const href = a.getAttribute('href').slice(1);
+      a.classList.toggle('active', href === activeId);
+    });
+  }
+  window.addEventListener('scroll', updateActive, { passive: true });
+  updateActive();
+})();
+</script>
+
+</body>
+</html>
